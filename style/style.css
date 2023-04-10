@@ -15,6 +15,105 @@ body {
   overflow-x: hidden;
 }
 
+.header__toggle,
+.header__nav {
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav {
+  opacity: 1;
+}
+
+.header__nav.is-active {
+  opacity: 1;
+  animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header {
+  /* existing styles */
+}
+.header__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  z-index: 1021;
+}
+@media (min-width: 1200px) {
+  .header__toggle {
+    display: none;
+  }
+}
+.header__toggle-icon, .header__toggle-icon:before, .header__toggle-icon:after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 22px;
+  transition: all 0.3s ease-in-out;
+}
+.header__toggle-icon:before {
+  transform: translateY(-6px);
+}
+.header__toggle-icon:after {
+  transform: translateY(4px);
+}
+.header__toggle.is-active-icon {
+  background-color: transparent;
+}
+.header__toggle.is-active-icon:before {
+  transform: translateY(0) rotate(45deg);
+}
+.header__toggle.is-active-icon:after {
+  transform: translateY(0) rotate(-45deg);
+}
+.header__nav {
+  /* existing styles */
+}
+@media (max-width: 1200px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .header__nav {
+    display: flex;
+  }
+}
+.header__nav.is-active {
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #342001;
+  z-index: 1020;
+  padding: 20px;
+}
+.header__nav.is-active li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header__nav.is-active li:last-child {
+  margin-bottom: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +131,6 @@ body {
 }
 .header__nav {
   gap: 30px;
-  display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
@@ -103,7 +201,7 @@ body {
   font-weight: 600;
   font-size: 70px;
   line-height: 96px;
-  color: #533200;
+  color: #3f2600;
   text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.21);
   margin-bottom: 30px;
 }
@@ -124,7 +222,7 @@ body {
   width: 300px;
   height: 70px;
   border: none;
-  background: #533200;
+  background: #3f2600;
   box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.3);
   border-radius: 70px;
   font-style: normal;
@@ -209,7 +307,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.04em;
-  color: #533200;
+  color: #3f2600;
 }
 .hero .about__content_text {
   font-style: normal;
@@ -361,7 +459,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.04em;
-  color: #533200;
+  color: #3f2600;
 }
 .main .bento__content_text {
   font-style: normal;
@@ -379,7 +477,7 @@ body {
   width: 300px;
   height: 70px;
   border: none;
-  background: #533200;
+  background: #3f2600;
   box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.3);
   border-radius: 70px;
   font-style: normal;
@@ -429,7 +527,7 @@ body {
   line-height: 60px;
   display: flex;
   align-items: center;
-  color: #533200;
+  color: #3f2600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .main .menu__nav ul {
@@ -455,9 +553,12 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+.main .menu__nav_item.selected {
+  color: #3f2600;
+}
 .main .menu__nav_item:hover {
   transform: translateY(-5px);
-  color: #533200;
+  color: #3f2600;
 }
 .main .menu__rectangle {
   padding: 15px;
@@ -484,7 +585,6 @@ body {
   overflow: hidden;
 }
 .main .menu__swiper .swiper-wrapper .swiper-slide {
-  transform: scale(0.9);
   transition: all 0.3s ease-in-out;
   width: 100%;
   height: 100%;
@@ -494,9 +594,6 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-}
-.main .menu__swiper .swiper-wrapper .swiper-slide-active {
-  transform: scale(1);
 }
 .main .menu__item {
   -moz-user-select: none;
@@ -543,7 +640,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
-  color: #533200;
+  color: #3f2600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 15px;
   padding-left: 10px;

@@ -23,10 +23,13 @@
                     </div>
                 </div>
                 <div class="col-9 d-flex align-items-center justify-content-end">
+                    <button class="header__toggle" aria-label="Menu">
+                        <span class="header__toggle-icon"></span>
+                    </button>
                     <ul class="header__nav">
                         <li><a href='#'>ГОЛОВНА</a></li>
                         <li><a href='#about'>ПРО НАС</a></li>
-                        <li><a href='#'>МЕНЮ</a></li>
+                        <li><a href='#menu'>МЕНЮ</a></li>
                         <li><a href='#bento'>БЕНТО - ТОРТИКИ</a></li>
                         <li><a href='#'>КОНТАКТИ</a></li>
                     </ul>
@@ -188,8 +191,8 @@
                         <div class="col-12 d-flex align-items-center">
                             <div class="menu__nav">
                                 <ul>
-                                    <li class="menu__nav_item">ТОРТИ</li>
-                                    <li class="menu__nav_item">ЧІЗКЕЙКИ</li>
+                                    <li class="menu__nav_item" data-products="cake">ТОРТИ</li>
+                                    <li class="menu__nav_item" data-products="chiz">ЧІЗКЕЙКИ</li>
                                     <li class="menu__nav_item">ДЕСЕРТИ</li>
                                     <li class="menu__nav_item">НАПОЇ</li>
                                 </ul>
@@ -202,7 +205,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="swiper-container-cake swiper2">
+                            <div class="swiper-container-cake swiper2" data-products="cake">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="menu__item">
@@ -606,30 +609,6 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="menu__item">
-                                            <img class="menu__item_img" src="./img/cake/syrnyk.png" alt="">
-                                            <div class="menu__item_content">
-                                                <div class="menu__item_title m-0">
-                                                    Сирник
-                                                    <div class="item-line"></div>
-                                                </div>
-                                                <div class="menu__item_about m-0">
-                                                    Сирник «Сльози ангела» -
-                                                    це поєднання
-                                                    натурального сиру з
-                                                    білковим кремом та
-                                                    кармелізованим
-                                                    тропічним кокосом.
-                                                </div>
-                                                <div class="menu__item_price m-0">
-                                                    <div class="price-line-vertical"></div>
-                                                    330грн/кг
-                                                    <div class="price-line-horizontal"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="menu__item">
                                             <img class="menu__item_img" src="./img/cake/napoleon.png" alt="">
                                             <div class="menu__item_content">
                                                 <div class="menu__item_title m-0">
@@ -652,6 +631,215 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/cake/syrnyk.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title m-0">
+                                                    Сирник
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about m-0">
+                                                    Сирник «Сльози ангела» -
+                                                    це поєднання
+                                                    натурального сиру з
+                                                    білковим кремом та
+                                                    кармелізованим
+                                                    тропічним кокосом.
+                                                </div>
+                                                <div class="menu__item_price m-0">
+                                                    <div class="price-line-vertical"></div>
+                                                    330грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-container-cake swiper2 d-none" data-products="chiz">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/york.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк
+                                                    «Нью-Йорк»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Класичний чізкейк, який
+                                                    поєднує в собі пісочне
+                                                    тісто та крем-чіз
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    350грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/lemon.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title m-0">
+                                                    Чізкейк
+                                                    «Лимонний»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about m-0" style="line-height: 1.5;">
+                                                    Особливий чізкейк, який
+                                                    вирізняється дивовижно
+                                                    ніжним смаком із легкою
+                                                    кислинкою та приємним
+                                                    ароматом
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    400грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/mango.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк
+                                                    «Манго-маракуйя»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Легкий тропічний чізкейк,
+                                                    який поєднує в собі крем-чіз
+                                                    та комфі з манго-маракуйя
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    450грн/кг
+                                                    <div class="price-line-horizontal"></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/garbuz.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк
+                                                    «Гарбузовий»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Дуже осінній чізкейк з
+                                                    нотками кориці, імбиру та
+                                                    мускатного горіху
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    450грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/mohito.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк «Мохіто»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Поєднання ніжного
+                                                    бісквіту, маскарпоне, м’яти
+                                                    та лайму
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    400грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/matcha.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк «Матча»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Поєднує в собі пісочне
+                                                    тісто, крем-чіз, голубу матчу
+                                                    та лохину
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    450грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/polunytsya.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title m-0">
+                                                    Чізкейк
+                                                    «Полуниця-Матча»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about" style="line-height: 1.5;">
+                                                    Поєднання пісочного
+                                                    коржа на рисовому
+                                                    борошні, крем-чізу з
+                                                    рожевою матчою та
+                                                    полуничного пюре.
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    450грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="menu__item">
+                                            <img class="menu__item_img" src="./img/chiz/coffe.png" alt="">
+                                            <div class="menu__item_content">
+                                                <div class="menu__item_title">
+                                                    Чізкейк
+                                                    «Кавовий»
+                                                    <div class="item-line"></div>
+                                                </div>
+                                                <div class="menu__item_about">
+                                                    Поєднує в собі крихке
+                                                    пісочне тісто та ніжний
+                                                    крем-чіз з приємним
+                                                    ароматом кави
+                                                </div>
+                                                <div class="menu__item_price">
+                                                    <div class="price-line-vertical"></div>
+                                                    300грн/кг
+                                                    <div class="price-line-horizontal"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -664,6 +852,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/bento.js"></script>
     <script src="./js/cake.js"></script>
+    <script src="./js/tabsMenu.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 
 </html>
