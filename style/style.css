@@ -804,6 +804,7 @@ body {
   align-self: center;
 }
 .main .footer {
+  background-color: #342001;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
