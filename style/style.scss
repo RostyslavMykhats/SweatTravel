@@ -955,6 +955,26 @@ body {
         transform: translateY(-30%);
     }
 
+    .footer {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__contact {
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
     .bento {
         justify-content: center;
 
@@ -1091,6 +1111,15 @@ body {
 }
 
 @media (min-width:1201px) {
+
+    .footer {
+        &__logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     .bento {
         &__content {
             width: 50%;

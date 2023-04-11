@@ -839,6 +839,21 @@ body {
     top: 30%;
     transform: translateY(-30%);
   }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__contact {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .bento {
     justify-content: center;
   }
@@ -940,6 +955,11 @@ body {
   }
 }
 @media (min-width: 1201px) {
+  .footer__logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
   .bento__content {
     width: 50%;
   }
