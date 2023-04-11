@@ -913,6 +913,40 @@ body {
         }
     }
 
+    .footer {
+
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 50px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        &__line {
+            width: 100%;
+            height: 2px;
+            background: #ffffff;
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            &_item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 10px;
+
+                a {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1020,7 +1054,7 @@ body {
     }
 
     .feedback {
-        &__form{
+        &__form {
             flex-direction: column;
             align-items: center;
 
@@ -1031,6 +1065,7 @@ body {
             &_wrapper {
                 width: 100%;
                 flex-direction: column;
+
                 input {
                     width: 100%;
                 }
@@ -1038,6 +1073,7 @@ body {
 
             &_mail {
                 width: 100%;
+
                 input {
                     width: 100%;
                 }
@@ -1045,6 +1081,7 @@ body {
 
             &_phone {
                 width: 100%;
+
                 input {
                     width: 100%;
                 }
@@ -1059,6 +1096,7 @@ body {
             width: 50%;
         }
     }
+
     .feedback__form_mail {
         width: 60%;
     }

@@ -20,9 +20,11 @@ form.addEventListener('submit', (event) => {
     }
 
     // Перевірка, чи введено правильний формат телефону
-    const phonePattern = /^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
-    if (!phonePattern.test(phoneInput.value)) {
-        alert('Будь ласка, введіть номер телефону у форматі +38(XXX)XXX-XX-XX.');
+    const phonePattern = /^\+\d{2}\\d{3}\\d{3}\d{2}\d{2}$/;
+    const phonePattern2 = /^\d{10}$/; // формат: 0934316230
+    const phonePattern3 = /^380\d{9}$/; // 380934316230
+    if (!phonePattern.test(phoneInput.value)&&!phonePattern2.test(phoneInput.value)&&!phonePattern3.test(phoneInput.value)) {
+        alert('Будь ласка, введіть номер телефону у форматі 380930919717 або 0930919717');
         return;
     }
 

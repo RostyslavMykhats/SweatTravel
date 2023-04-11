@@ -3,11 +3,10 @@ const swiperCake = new Swiper('.swiper-container-cake', {
     slidesPerGroup: 1,
     loop: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
     speed: 500,
     navigation: {
-        nextEl: ".next",
-        prevEl: ".prev",
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
     },
 
     breakpoints: {
