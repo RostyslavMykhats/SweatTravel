@@ -191,7 +191,7 @@
                         <div class="col-12 d-flex align-items-center">
                             <div class="menu__nav">
                                 <ul>
-                                    <li class="menu__nav_item" data-products="cake">ТОРТИ</li>
+                                    <li class="menu__nav_item selected" data-products="cake">ТОРТИ</li>
                                     <li class="menu__nav_item" data-products="chiz">ЧІЗКЕЙКИ</li>
                                     <li class="menu__nav_item">ДЕСЕРТИ</li>
                                     <li class="menu__nav_item">НАПОЇ</li>
@@ -847,6 +847,42 @@
                 </div>
             </div>
         </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="feedback">
+                            <form action="">
+                                <div class="feedback__title">
+                                    Зв'яжіться з нами
+                                </div>
+                                <div class="feedback__subtitle">
+                                    Бажаєте зробити замовлення або маєте запитання до нас.
+                                    Заповніть форму і ми зв'яжемося з вами. Дякуємо!
+                                </div>
+                                <div class="feedback__form">
+                                    <div class="feedback__form_quest">
+                                        <label for="quest">ЗАПИТАННЯ</label>
+                                        <textarea id="quest" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="feedback__form_wrapper">
+                                        <div class="feedback__form_phone">
+                                            <label for="phone">ТЕЛЕФОН</label>
+                                            <input type="text" id="phone" placeholder="+38(093)091-97-17">
+                                        </div>
+                                        <div class="feedback__form_mail">
+                                            <label for="mail">EMAIL</label>
+                                            <input type="text" id="mail" placeholder="email@gmail.com">
+                                        </div>
+                                    </div>
+                                    <button class="bento__btn">Надіслати</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -854,6 +890,7 @@
     <script src="./js/cake.js"></script>
     <script src="./js/tabsMenu.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/validForm.js"></script>
 </body>
 
 </html>
