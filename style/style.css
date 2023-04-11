@@ -845,10 +845,6 @@ body {
     align-items: center;
     gap: 20px;
   }
-  .footer__contact {
-    align-items: center;
-    justify-content: center;
-  }
   .footer__logo {
     display: flex;
     justify-content: center;
