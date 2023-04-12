@@ -1004,6 +1004,8 @@
                         <div class="feedback">
                             <form action="" name="contact" netlify>
                                 <input type="hidden" name="contact" value="feedback" />
+                                <input type="hidden" name="phone" id="phone-hidden" value="contact" />
+                                <input type="hidden" name="bot-field" />
                                 <div class="feedback__title">
                                     Зв'яжіться з нами
                                 </div>
@@ -1019,7 +1021,7 @@
                                     <div class="feedback__form_wrapper">
                                         <div class="feedback__form_phone">
                                             <label for="phone">ТЕЛЕФОН</label>
-                                            <input type="text" id="phone" placeholder="+38(093)091-97-17">
+                                            <input type="text" name="phone" id="phone" placeholder="+38(093)091-97-17">
                                             <div id="phone-error">
                                                 <span style="color: red;display: none;">Невірний формат номеру</span>
                                             </div>

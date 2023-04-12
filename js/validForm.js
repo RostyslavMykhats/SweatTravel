@@ -3,6 +3,9 @@ const form = document.querySelector('form');
 const phoneInput = form.querySelector('#phone');
 const emailInput = form.querySelector('#mail');
 
+const phoneHiddenInput = document.getElementById("phone-hidden");
+phoneHiddenInput.value = phoneInput.value;
+
 form.addEventListener('submit', (event) => {
     // Відміна відправки форми за замовчуванням
     event.preventDefault();
