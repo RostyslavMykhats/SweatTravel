@@ -1003,9 +1003,10 @@
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <div class="feedback">
                             <form action="" name="contact" netlify>
-                                <input type="hidden" name="contact" value="feedback" />
-                                <input type="hidden" name="phone" id="phone-hidden" value="contact" />
-                                <input type="hidden" name="bot-field" />
+                                <input type="hidden" name="contact" value="Заявка з сайту" />
+                                <input type="hidden" name="phone" id="phone-hidden" value="Телефон" />
+                                <input type="hidden" name="quest" value="Запитання" />
+                                <input type="hidden" name="email" value="EMAIL" />
                                 <div class="feedback__title">
                                     Зв'яжіться з нами
                                 </div>
@@ -1016,7 +1017,7 @@
                                 <div class="feedback__form">
                                     <div class="feedback__form_quest">
                                         <label for="quest">ЗАПИТАННЯ</label>
-                                        <textarea id="quest" cols="30" rows="10"></textarea>
+                                        <textarea id="quest" name="quest" cols="30" rows="10"></textarea>
                                     </div>
                                     <div class="feedback__form_wrapper">
                                         <div class="feedback__form_phone">
@@ -1028,7 +1029,7 @@
                                         </div>
                                         <div class="feedback__form_mail">
                                             <label for="mail">EMAIL</label>
-                                            <input type="text" id="mail" placeholder="email@gmail.com">
+                                            <input type="text" id="mail" name="email" placeholder="email@gmail.com">
                                             <div id="mail-error">
                                                 <span style="color: red;display: none;">Невірний формат email</span>
                                             </div>
