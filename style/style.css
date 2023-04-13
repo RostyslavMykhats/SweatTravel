@@ -185,8 +185,8 @@ body {
   min-height: 200vh;
   font-family: "Montserrat";
   background-image: url(../img/bg-hero.webp);
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: center center;
 }
 .hero .start {
   height: 100vh;
@@ -625,6 +625,10 @@ body {
   padding-bottom: 20px;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
+}
+.main .menu__item_drink {
+  width: 100%;
+  height: 100%;
 }
 .main .menu__item_content {
   display: flex;
