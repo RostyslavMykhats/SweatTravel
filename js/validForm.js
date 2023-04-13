@@ -35,7 +35,6 @@ form.addEventListener('submit', (event) => {
     }
 
     // Якщо всі поля пройшли валідацію, відправляємо форму
-    window.location.href = 'success.html';
     form.submit()
 });
 
