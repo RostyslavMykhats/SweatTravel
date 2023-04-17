@@ -619,6 +619,10 @@ body {
 .main .bento__carousel_img img {
   width: 352px;
   height: 462px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
   border-radius: 15px;
   box-shadow: 6px 9px 14px rgba(0, 0, 0, 0.25);
 }
