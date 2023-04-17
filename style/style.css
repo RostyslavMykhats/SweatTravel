@@ -733,7 +733,7 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  margin-top: 40px;
+  margin-top: 140px;
   background-color: rgba(42, 42, 42, 0.4705882353);
   border-radius: 15px;
   width: 340px;
@@ -768,9 +768,9 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 260px;
+  height: 330px;
   position: absolute;
-  top: -15%;
+  top: -30%;
   right: -10%;
 }
 .main .menu__item_title {
