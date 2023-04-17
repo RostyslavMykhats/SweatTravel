@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дякуємо!</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+        
+        @font-face {
+            font-family: 'new';
+            src: url(./style/New-YorkerC.ttf);
+        }
+
         a:hover {
             color: #ffffff;
         }
@@ -15,7 +20,7 @@
 </head>
 
 <body style="height: 100vh;
-background-image: url(./img/bg-hero.webp);
+background-image: url(./img/bg-main2.webp);
 background-size: cover;
 background-position: center center;
 display: flex;
@@ -24,10 +29,10 @@ align-items: center;
 text-align: center;
 ">
     <div class="success" style="
-    background-color: #e6b881c9;
+    background-color: #161616a2;
     padding: 20px;
     border-radius: 10px;
-    font-family: 'Montserrat';
+    font-family: 'new';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 30px;
@@ -41,9 +46,11 @@ text-align: center;
                 justify-content: center;
                 align-items: center;
     ">
-        <h1>Дякуємо за заявку!</h1>
+        <h1 style="
+        font-size: 35px;
+        ">Дякуємо за заявку!</h1>
         <p style="
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
         ">Наш менеджер зв'яжеться з вами найближчим часом.</p>
         <div class="back" style="
@@ -51,7 +58,7 @@ text-align: center;
             <a href="index.html" style="
             font-size: 18px;
             text-decoration: none;
-            color: #3f2600;
+            color: #ddc4a3;
             cursor: pointer;
             ">Повернутися на головну</a>
         </div>
