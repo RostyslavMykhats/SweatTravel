@@ -768,9 +768,9 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 220px;
+  height: 230px;
   position: absolute;
-  top: -5%;
+  top: -6%;
   right: -10%;
 }
 .main .menu__item_title {
